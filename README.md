@@ -1,2 +1,2 @@
-# FrontendMentor - Desafio 1
+# FrontendMentor
 Desafíos Frontend usando HTML, CSS y JS.
