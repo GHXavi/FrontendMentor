@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__img"></div>
+        <div class="card__content">
+          <h2>Stay updated!</h2>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="icon-list" />
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="icon-list" />
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="icon-list" />
+              <p>And much more!</p>
+            </li>
+          </ul>
+
+          <form class="form" action="">
+            <div class="header__form">
+              <label for="email">Email address</label>
+            </div>
+            <input
+              type="email"
+              placeholder="email@company.com"
+              id="email"
+              name="email"
+            />
+            <input type="submit" value="Subscribe to monthly newsletter" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal__bg">
+      <div class="modal">
+        <div class="modal__content">
+          <img src="assets/images/icon-success.svg" alt="icon-success" />
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <span id="emailOutput">ash@loremcompany.com</span>. Please open it
+            and click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <a href="" id="dismissBtn" class="modal__btn">Dismiss message</a>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Javier Alexis Peralta Duarte</a>.
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
