@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <script
+      src="https://kit.fontawesome.com/e485cc23e7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body class="font-epilogue bg-[#FAFAFA]">
+    <header
+      class="flex justify-between items-center h-[70px] px-3 lg:h-[90px] lg:px-[39px] lg:justify-start lg:gap-[60px]"
+    >
+      <img src="images/logo.svg" alt="logo" />
+
+      <!-- NAV -->
+      <div
+        id="bgNav"
+        class="bg-almost-black/75 absolute inset-0 h-dvh hidden lg:hidden"
+      ></div>
+      <nav
+        id="navBar"
+        class="text-[16px] font-medium text-medium-gray bg-almost-white absolute right-0 top-0 h-[100%] w-[240px] px-[24px] hidden lg:static lg:w-full lg:h-auto lg:flex lg:justify-between lg:items-center lg:text-[18px] lg:bg-inherit"
+      >
+        <ul
+          class="flex flex-col gap-5 mt-[78px] mb-[22px] lg:w-[380px] lg:flex-row lg:m-0 lg:gap-[35px]"
+        >
+          <li class="lg:relative">
+            <a
+              id="btnFeatures"
+              href="#"
+              class="flex items-center gap-3 hover:text-almost-black transition-all"
+            >
+              Features
+              <i
+                id="iconFeatures"
+                class="fa-solid fa-angle-up transition-all text-[12px]"
+              ></i>
+            </a>
+
+            <!-- Nav desplegable -->
+            <ul
+              id="ulFeatures"
+              class="px-5 pt-5 flex flex-col gap-3 lg:text-[15.75px] lg:absolute lg:w-[153px] lg:h-[160px] lg:py-[18px] lg:px-[24px] lg:bg-almost-white lg:rounded-2xl lg:shadow-3xl lg:top-10 lg:right-0 box-border hidden transition-all"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-almost-black transition-all"
+                >
+                  <img src="images/icon-todo.svg" alt="icon-todo" />
+                  Todo List
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-almost-black transition-all"
+                >
+                  <img src="images/icon-calendar.svg" alt="icon-calendar" />
+                  Calendar
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-almost-black transition-all"
+                >
+                  <img src="images/icon-reminders.svg" alt="icon-reminders" />
+                  Reminders
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-almost-black transition-all"
+                >
+                  <img src="images/icon-planning.svg" alt="icon-planning" />
+                  Planning
+                </a>
+              </li>
+            </ul>
+            <!-- Nav desplegable -->
+          </li>
+          <li class="lg:relative">
+            <a
+              id="btnCompany"
+              href="#"
+              class="flex items-center gap-3 hover:text-almost-black transition-all"
+            >
+              Company
+              <i
+                id="iconCompany"
+                class="fa-solid fa-angle-up transition-all text-[12px]"
+              ></i>
+            </a>
+
+            <!-- Nav desplegable -->
+            <ul
+              id="ulCompany"
+              class="px-5 pt-5 flex flex-col gap-3 lg:text-[15.75px] lg:absolute lg:w-[122px] lg:h-[127px] lg:py-[18px] lg:px-[24px] lg:bg-almost-white lg:rounded-2xl lg:shadow-3xl lg:top-10 lg:left-0 box-border hidden transition-all"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-almost-black transition-all"
+                  >History</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-almost-black transition-all"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-almost-black transition-all"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+            <!-- Nav desplegable -->
+          </li>
+          <li>
+            <a href="#" class="hover:text-almost-black transition-all">
+              Careers
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-almost-black transition-all">
+              About
+            </a>
+          </li>
+        </ul>
+        <div class="flex flex-col gap-1 text-center lg:w-[210px] lg:flex-row">
+          <a
+            href="#"
+            class="py-2 lg:px-[22px] hover:text-almost-black transition-all"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="py-2 border-[2px] border-medium-gray rounded-2xl lg:px-[22px] hover:border-almost-black hover:text-almost-black transition-all"
+            >Register</a
+          >
+        </div>
+      </nav>
+      <!-- NAV -->
+
+      <img
+        id="btnMenu"
+        src="images/icon-menu.svg"
+        alt="icon-menu"
+        class="lg:hidden transition-all cursor-pointer"
+      />
+      <img
+        id="btnCloseMenu"
+        src="images/icon-close-menu.svg"
+        alt="icon-close-menu"
+        class="hidden lg:hidden transition-all z-10 cursor-pointer"
+      />
+    </header>
+
+    <main
+      class="flex flex-col gap-[47px] max-w-[768px] m-auto xl:max-w-[1146px] xl:flex-row-reverse xl:items-end xl:justify-between xl:mt-[38px]"
+    >
+      <img
+        src="images/image-hero-mobile.png"
+        alt="image-hero-mobile"
+        class="xl:hidden"
+      />
+      <img
+        src="images/image-hero-desktop.png"
+        alt="image-hero-desktop"
+        class="hidden xl:block w-[481px] h-[641px]"
+      />
+      <div class="text-center xl:text-start xl:w-[514px]">
+        <h1
+          class="font-bold text-almost-black text-[30px] xl:text-[78px] xl:leading-tight"
+        >
+          Make remote work
+        </h1>
+        <p
+          class="text-[16px] text-medium-gray px-[17px] my-[28px] xl:mt-[67px] xl:mb-[56px] xl:text-[18px]"
+        >
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+
+        <div class="flex justify-center items-center xl:justify-start">
+          <a
+            href="#"
+            class="flex justify-center items-center rounded-2xl w-[135px] h-[48px] bg-almost-black text-almost-white font-bold text-[16px] xl:text-[18px] xl:w-[162px] xl:h-[55px] border border-almost-black hover:bg-almost-white hover:text-almost-black transition-all"
+            >Learn more</a
+          >
+        </div>
+
+        <div
+          class="flex justify-between items-center mt-[46px] px-3 gap-6 xl:h-[40px]"
+        >
+          <img
+            src="images/client-databiz.svg"
+            alt="client-databiz"
+            class="w-[82px] xl:w-[115px]"
+          />
+          <img
+            src="images/client-audiophile.svg"
+            alt="client-audiophile"
+            class="w-[54px] xl:w-[74px]"
+          />
+          <img
+            src="images/client-meet.svg"
+            alt="client-meet"
+            class="w-[65px] xl:w-[90px]"
+          />
+          <img
+            src="images/client-maker.svg"
+            alt="client-maker"
+            class="w-[60px] xl:w-[83px]"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center text-[16px] text-medium-gray mt-10">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="cursor-pointer hover:text-almost-black"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/GHXavi"
+        class="cursor-pointer hover:text-almost-black"
+        >Javier Alexis Peralta Duarte</a
+      >.
+    </footer>
+
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
